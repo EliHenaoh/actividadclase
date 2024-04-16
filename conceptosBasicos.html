@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceptos básicos js</title>
-    
-    <script src="/scripts/conceptosBasicos.js" defer></script>
-    <script src="/scripts/practicaConceptos.js" defer type="text/JavaScript"></script>
-    
+
+    <!-- archivo de js de la clase pasada -->
+    <script src="scripts/conceptosBasicos.js" defer></script>
+    <!-- archivo de js de la clase de hoy 10/04/2024 -->
+    <!-- type="text/JavaScript" -> RECOMENDADO USAR -->
+    <script src="scripts/practicaConceptos.js" defer type="text/JavaScript"></script>
+
 </head>
-<body> 
+
+<body>
+
 
     <header>
         <h1>Conceptos básicos</h1>
         <h2>De JavaScript</h2>
     </header>
+
     <main>
-        <p> Implementar los conceptos de sitios web dinamicos con JavaScript</p>
+
+        <p>Implementar los conceptos de sitios web dinámicos con javaScript:</p>
+
         <ol>
-            <li> 1. MANEJO DEL DOM</li>
-            <LI> 2. CONCIDIONALES </LI>
-            <LI> 3. CICLOS </LI>
-    </ol>
-    <section>
-        <h3> EJERCICIO DE DOM Y CONDICIONALES</h3>
-        <P> presuntar al usuario su edad y mostrar en pantalla si es mayor o menos de edad</P>
-<div>
-    <label>¿Cual es su edad?</label>
-<input type="number" id="edadInput" 
-placeholder="Ingrese aqui su edad">
-<button onclick="verificarEdad()"> Verificar edad</button>
-<span id="mensaje"></span>
+            <li> MANEJO DEL DOM</li>
+            <li> CONDICIONALES</li>
+            <li> CICLOS</li>
+        </ol>
 
 
-</div>
+        <!-- sección para el primer ejercicio -> Ejercicio de DOM Y CONDICIONALES -->
+        <section>
+            <h3>Ejercicio de DOM y Condicionales</h3>
+            <!-- Qué es lo que quiero hacer con este ejercicio -->
+            <p> Preguntar al usuario su edad y mostrar en pantalla si es mayor o menor de edad</p>
 
-    </setion>
+            <div class="contenedor">
+                <!-- input -> entrada -> que es algo que me suministra el usuario ej: número, un nombre, correo, una contraseña, etc -->
+                <!-- label -> es una etiqueta para el input -->
+                <label>¿Cuál es tu edad?</label>
+                <input type="number" id="edadInput" placeholder="Ingrese aquí su edad">
+
+                <!-- para darle duncionalidad a ese botón, debo llamar un EVENTO onclick -> darle click al botón -->
+                <!-- EVENTO ES UNA ACCIÓN DEL USUARIO -->
+                <button id="boton" onclick="verificarEdad()">Verificar edad</button>
+
+                <!-- el id -> es un IDENTIFICADOR ÚNICO -> que podamos llevar un elemento de html a nuestro JS -->
+                <br><br>
+                <span id="mensajeEdad">Soy el mensaje que te dirá si eres mayor de edad</span>
+
+            </div>
+
+
+        </section>
+
     </main>
-    
+
     <footer>
-        <p> Todos los derechos reservados de Eliana Henao</p>
+        <p>Todos los derechos reservados -> creado por Luisa Castaño</p>
     </footer>
+
+
 
 
 
@@ -51,4 +75,5 @@ placeholder="Ingrese aqui su edad">
     -->
     <!-- <script src="/conceptosBasicos.js"></script> -->
 </body>
+
 </html>
